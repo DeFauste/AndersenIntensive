@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".ui.MainActivity"
+    android:layout_weight="3">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.contactsreader.ui.fragment.ListContactsFragment"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@id/container_fragment2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout="@layout/fragment_list_contacts" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container_fragment2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.contactsreader.ui.fragment.EditorContactFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/container_fragment"
+        tools:layout="@layout/fragment_editor_contact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

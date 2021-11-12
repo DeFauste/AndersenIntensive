@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="save">save</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="allow_editing_contacts">Allow editing contacts</string>
+    <string name="allow_button">allow</string>
+    <string name="allow_read_contacts">Allow read contacts</string>
 </resources>

@@ -7,12 +7,20 @@
 
     <fragment
         android:id="@+id/listContactsFragment"
-        android:name="com.example.contactsreader.ListContactsFragment"
+        android:name="com.example.contactsreader.ui.fragment.ListContactsFragment"
         android:label="fragment_list_contacts"
-        tools:layout="@layout/fragment_list_contacts" />
+        tools:layout="@layout/fragment_list_contacts" >
+        <action
+            android:id="@+id/action_listContactsFragment_to_editorContactFragment"
+            app:destination="@id/editorContactFragment" />
+    </fragment>
     <fragment
         android:id="@+id/editorContactFragment"
-        android:name="com.example.contactsreader.EditorContactFragment"
+        android:name="com.example.contactsreader.ui.fragment.EditorContactFragment"
         android:label="fragment_editor_contact"
-        tools:layout="@layout/fragment_editor_contact" />
+        tools:layout="@layout/fragment_editor_contact" >
+        <action
+            android:id="@+id/action_editorContactFragment_to_listContactsFragment"
+            app:destination="@id/listContactsFragment" />
+    </fragment>
 </navigation>
